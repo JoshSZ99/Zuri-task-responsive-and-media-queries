@@ -3,78 +3,79 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media screen and (max-width:1440px) {
-    
+
+/* Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%) */
+
+body    {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(bg-intro-mobile.png);
+    padding: 2em;
 }
-main    {
-    /* width: 50%; */
-    background-color: hsl(0, 0%, 95%);
-    margin: auto;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.top    {
+    color: white;
+}
+.mid    {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* box-shadow: 20px gray; */
 }
 h1  {
-    color: hsl(0, 0%, 95%);
     font-family: 'Big Shoulders Display', cursive;
-    font-weight: 700;
+    font-family: 'Lexend Deca', sans-serif;text-align: center;
 }
 p   {
-    color: hsla(0, 0%, 100%, 0.75);
-    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
     font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
+    text-align: center;
 }
-.column-1   {
-    background-color: hsl(31, 77%, 52%);
-    padding: 25px;
-    border-radius: 5px 0px 0px 5px;
+p a{
+    color: red;
 }
-.column-2   {
-    background-color: hsl(184, 100%, 22%);
-    padding: 25px;
+.bot    {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
 }
-.column-3   {
-    background-color: hsl(179, 100%, 13%);
-    padding: 25px;
-    border-radius: 0px 5px 5px 0px;}
-.button1{
+form{
+    /* padding: 15px; */
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+input   {
+    width: 95%;
     padding: 10px;
-    border: 2px solid hsl(0, 0%, 95%);
-    border-radius: 40px;
-    background-color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
     font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    color: hsl(31, 77%, 52%);
+    margin: 10px;
+    border-radius: 10px;
 }
-.button2{
-    padding: 10px;
-    border: 2px solid hsl(0, 0%, 95%);
-    border-radius: 40px;
-    background-color: hsl(0, 0%, 95%);
+input:invalid{
+    background: url(icon-error.svg);
+    background-repeat: no-repeat;
+}
+.submit {
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Big Shoulders Display', cursive;
     font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    color: hsl(184, 100%, 22%);
+    color: white;
 }
-.button3{
-    padding: 10px;
-    border: 2px solid hsl(0, 0%, 95%);
-    border-radius: 40px;
-    background-color: hsl(0, 0%, 95%);
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    color: hsl(179, 100%, 13%);
-}
-.button1:hover    {
-    background-color: hsl(31, 77%, 52%);
-    color: hsl(0, 0%, 95%);
-}
-.button2:hover    {
-    background-color: hsl(184, 100%, 22%);
-    color: hsl(0, 0%, 95%);
-}
-.button3:hover    {
-    background-color: hsl(179, 100%, 13%);
-    color: hsl(0, 0%, 95%);
+@media screen and (min-width:376px) {
+    body    {
+        display: flex;
+    }
+    .top{
+        margin: auto;
+        width: 50%;
+    }
+    .right{
+        width: 50%;
+    }
 }
